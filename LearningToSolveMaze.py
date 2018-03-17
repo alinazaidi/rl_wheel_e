@@ -1,3 +1,14 @@
+#Python code to learn to solve a maze using shortest path like this: 
+#['-'   '-'   '+'   ' ']
+#['-'   ' '   ' '   ' ']
+#['P'   ' '   '-'   ' ']
+#['-'   '-'   '-'   ' ']
+#Where '-' are walls which give reward: -10
+#'+' is the goal with reward +10
+#All other spaces in grid have reward: -1
+#Keras Q-Leaning Neural Network is used. The game is lost of the agent lands on '-' 
+#Reference : http://outlace.com/rlpart3.html
+
 import numpy as np
 
 def randPair(s,e):
